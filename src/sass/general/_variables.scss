@@ -1,0 +1,22 @@
+// =========== COLORS
+
+$primary: #00a1ba;
+$success: #60C322;
+$danger: #E70E0E;
+$warning: #ffc107;
+$dark: #151E11;
+$light: #fdfdfd;
+
+// ============= CARD
+
+$cardWidth: 18rem;
+
+// ============ BREAKPOINTS
+
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

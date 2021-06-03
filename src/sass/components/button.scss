@@ -1,0 +1,185 @@
+.btn {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: $dark;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  outline: none;
+
+  &:hover:not(.dropdown-toggle) {
+    color: $light;
+    filter: grayscale(30%);
+  }
+
+  &:active:not(.dropdown-toggle) {
+    transform: scale(1);
+  }
+
+  &.disabled,
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+
+  &-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+  }
+
+  &-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+  }
+
+  &-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $light;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+
+  &-success {
+    background-color: $success;
+    border-color: $success;
+    color: $light;
+
+    &:hover {
+      background-color: darken($success, 10%);
+    }
+  }
+
+  &-danger {
+    background-color: $danger;
+    border-color: $danger;
+    color: $light;
+
+    &:hover {
+      background-color: darken($danger, 10%);
+    }
+  }
+
+  &-warning {
+    background-color: $warning;
+    border-color: $warning;
+    color: $light;
+
+    &:hover {
+      background-color: darken($warning, 10%);
+    }
+  }
+
+  &-dark {
+    background-color: $dark;
+    border-color: $dark;
+    color: $light;
+
+    &:hover {
+      background-color: darken($dark, 10%);
+    }
+  }
+
+  &-outline-primary {
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  &-outline-success {
+    border-color: $success;
+    color: $success;
+
+    &:hover {
+      background-color: $success;
+    }
+  }
+
+  &-outline-danger {
+    border-color: $danger;
+    color: $danger;
+
+    &:hover {
+      background-color: $danger;
+    }
+  }
+
+  &-outline-warning {
+    border-color: $warning;
+    color: $warning;
+
+    &:hover {
+      background-color: $warning;
+    }
+  }
+
+  &-outline-dark {
+    border-color: $dark;
+    color: $dark;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+@keyframes btnFocus {
+  from {
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.btn-group {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+
+  & > .btn {
+    position: relative;
+    flex: 1 1 auto;
+    margin: 0 !important;
+    font-size: 1rem !important;
+
+    &:not(:last-child):not(:first-child) {
+      border-radius: 0;
+    }
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+  }
+}

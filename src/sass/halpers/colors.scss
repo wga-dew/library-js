@@ -1,0 +1,55 @@
+// Text colors
+
+.text-primary {
+    color: $primary;
+}
+
+.text-success {
+    color: $success;
+}
+
+.text-danger {
+    color: $danger;
+}
+
+.text-warning {
+    color: $warning;
+}
+
+.text-dark {
+    color: #000;
+}
+
+.text-white {
+    color: #fff;
+}
+
+// Background color
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-success {
+    background-color: $success;
+}
+
+.bg-danger {
+    background-color: $danger;
+}
+
+.bg-warning {
+    background-color: $warning;
+}
+
+.bg-light {
+    background-color: $light;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
